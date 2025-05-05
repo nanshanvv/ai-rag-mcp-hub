@@ -5,7 +5,7 @@ import reactor.core.publisher.Flux;
 
 public interface IAiService {
 
-    ChatResponse generate(String moedl, String message);
+    ChatResponse generate(String model, String message);
 
-    Flux<ChatResponse> generateStream(String moedl, String message);
+    Flux<ChatResponse> generateStream(String model, String message);
 }
