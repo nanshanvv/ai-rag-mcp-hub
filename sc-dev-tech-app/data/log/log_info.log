@@ -1,4 +1,4 @@
-25-05-02.11:45:06.310 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-05-05.18:04:05.288 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -7,119 +7,23 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-05-02.11:45:06.328 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51583 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:45:06.329 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:45:06.701 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'OllamaConfig' contains overloaded @Bean methods with name 'vectorStore'. Use unique method names for separate bean definitions (with individual conditions etc) or switch '@Configuration.enforceUniqueMethods' to 'false'.
-Offending resource: class path resource [cn/shuchang/sc/dev/tech/config/OllamaConfig.class]
-25-05-02.11:45:06.706 [main            ] INFO  ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-25-05-02.11:45:06.717 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'OllamaConfig' contains overloaded @Bean methods with name 'vectorStore'. Use unique method names for separate bean definitions (with individual conditions etc) or switch '@Configuration.enforceUniqueMethods' to 'false'.
-Offending resource: class path resource [cn/shuchang/sc/dev/tech/config/OllamaConfig.class]
-	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
-	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:233)
-	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:206)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-25-05-02.11:45:06.722 [main            ] WARN  TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [cn.shuchang.sc.dev.tech.test.RAGTest@1a4d1ab7]
-java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@5bc7e78e testClass = cn.shuchang.sc.dev.tech.test.RAGTest, locations = [], classes = [cn.shuchang.sc.dev.tech.Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@235834f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77888435, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@36fc695d, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@5bf0d49, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@385c9627, org.springframework.boot.test.context.SpringBootTestAnnotation@995f8631], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'OllamaConfig' contains overloaded @Bean methods with name 'vectorStore'. Use unique method names for separate bean definitions (with individual conditions etc) or switch '@Configuration.enforceUniqueMethods' to 'false'.
-Offending resource: class path resource [cn/shuchang/sc/dev/tech/config/OllamaConfig.class]
-	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
-	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:233)
-	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:206)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	... 27 common frames omitted
-25-05-02.11:47:24.477 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-05-05.18:04:05.302 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.15 with PID 18665 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
+25-05-05.18:04:05.303 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-05-05.18:04:05.669 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-05.18:04:05.677 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-05.18:04:05.693 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+25-05-05.18:04:06.264 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-05.18:04:06.736 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@64040a9d
+25-05-05.18:04:06.737 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-05.18:04:08.914 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-05.18:04:08.937 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+25-05-05.18:04:09.061 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:04:09.350 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:04:09.772 [main            ] INFO  JGitTest               - Started JGitTest in 4.728 seconds (process running for 5.339)
+25-05-05.18:04:10.082 [main            ] INFO  JGitTest               - Cloned Path/Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app/./cloned-repo
+25-05-05.18:04:14.143 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-05.18:04:14.144 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-05.18:05:04.093 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -128,22 +32,23 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-05-02.11:47:24.487 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51632 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:47:24.488 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:47:24.911 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-05-02.11:47:24.913 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-05-02.11:47:24.932 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-25-05-02.11:47:25.529 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-05-02.11:47:26.292 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6a79b071
-25-05-02.11:47:26.315 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-05-02.11:47:28.803 [main            ] INFO  Version                - Redisson 3.44.0
-25-05-02.11:47:28.832 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-25-05-02.11:47:28.986 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:47:29.321 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:47:29.694 [main            ] INFO  RAGTest                - Started RAGTest in 5.502 seconds (process running for 6.242)
-25-05-02.11:47:30.360 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-05-02.11:47:30.361 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-05-02.11:48:59.270 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-05-05.18:05:04.102 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.15 with PID 18742 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
+25-05-05.18:05:04.102 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-05-05.18:05:04.463 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-05.18:05:04.465 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-05.18:05:04.480 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+25-05-05.18:05:04.954 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-05.18:05:05.482 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@61d6fc32
+25-05-05.18:05:05.483 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-05.18:05:06.148 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-05.18:05:06.167 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+25-05-05.18:05:06.296 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:05:06.568 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:05:06.942 [main            ] INFO  JGitTest               - Started JGitTest in 3.088 seconds (process running for 3.753)
+25-05-05.18:05:07.251 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.DS_Store
+25-05-05.18:05:07.552 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-05.18:05:07.553 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-05.18:06:09.734 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -152,23 +57,108 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-05-02.11:48:59.283 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51658 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:48:59.283 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:48:59.722 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-05-02.11:48:59.724 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-05-02.11:48:59.740 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-25-05-02.11:49:00.308 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-05-02.11:49:00.758 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@25029afa
-25-05-02.11:49:00.759 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-05-02.11:49:01.411 [main            ] INFO  Version                - Redisson 3.44.0
-25-05-02.11:49:01.429 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-25-05-02.11:49:01.580 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:01.916 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:02.311 [main            ] INFO  RAGTest                - Started RAGTest in 3.337 seconds (process running for 3.994)
-25-05-02.11:49:03.317 [main            ] INFO  RAGTest                - Upload Success!
-25-05-02.11:49:03.366 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-05-02.11:49:03.368 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-05-02.11:49:09.464 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-05-05.18:06:09.743 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.15 with PID 18762 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
+25-05-05.18:06:09.744 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-05-05.18:06:10.080 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-05.18:06:10.082 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-05.18:06:10.098 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+25-05-05.18:06:10.578 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-05.18:06:10.950 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@7dd6ef6f
+25-05-05.18:06:10.951 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-05.18:06:11.527 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-05.18:06:11.546 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+25-05-05.18:06:11.678 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:06:11.941 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:06:12.314 [main            ] INFO  JGitTest               - Started JGitTest in 2.796 seconds (process running for 3.333)
+25-05-05.18:06:12.594 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.DS_Store
+25-05-05.18:06:12.594 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/pom.xml
+25-05-05.18:06:12.594 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/docs/curl/curl-glm-4.sh
+25-05-05.18:06:12.596 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/.DS_Store
+25-05-05.18:06:12.597 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/test-classes/com/github/nanshanvv/sdk/test/ApiTest.class
+25-05-05.18:06:12.597 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/generated-sources/.DS_Store
+25-05-05.18:06:12.597 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/.DS_Store
+25-05-05.18:06:12.597 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/META-INF/MANIFEST.MF
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/types/utils/RandomStringUtils.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/types/utils/BearerTokenUtils.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/OpenAiCodeReview.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/git/GitCommand.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionRequestDTO$Prompt.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionSyncResponseDTO.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionSyncResponseDTO$Message.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionSyncResponseDTO$Choice.class
+25-05-05.18:06:12.598 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionRequestDTO.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/impl/ChatGLM.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/infrastructure/openai/IOpenAI.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/ChatCompletionSyncResponse$Choice.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/Model.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/Message.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/ChatCompletionRequest$Prompt.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/ChatCompletionRequest.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/Message$1.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/ChatCompletionSyncResponse.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/model/ChatCompletionSyncResponse$Message.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/service/impl/OpenAiCodeReviewService.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/service/impl/OpenAiCodeReviewService$1.class
+25-05-05.18:06:12.599 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/service/AbstractOpenAiCodeReviewService.class
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/classes/com/github/nanshanvv/sdk/domain/service/IOpenAiCodeReviewService.class
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/original-openai-code-review-sdk-1.0.jar
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/maven-archiver/pom.properties
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/generated-test-sources/.DS_Store
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/surefire-reports/com.github.nanshanvv.sdk.test.ApiTest.txt
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/target/surefire-reports/TEST-com.github.nanshanvv.sdk.test.ApiTest.xml
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/pom.xml
+25-05-05.18:06:12.600 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/dependency-reduced-pom.xml
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/test/java/com/github/nanshanvv/sdk/test/ApiTest.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/resources/META-INF/MANIFEST.MF
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/types/utils/RandomStringUtils.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/types/utils/BearerTokenUtils.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/infrastructure/git/GitCommand.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionSyncResponseDTO.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/infrastructure/openai/dto/ChatCompletionRequestDTO.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/infrastructure/openai/impl/ChatGLM.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/infrastructure/openai/IOpenAI.java
+25-05-05.18:06:12.601 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/OpenAiCodeReview.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/domain/model/Message.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/domain/model/Model.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/domain/service/impl/OpenAiCodeReviewService.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/domain/service/IOpenAiCodeReviewService.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-sdk/src/main/java/com/github/nanshanvv/sdk/domain/service/AbstractOpenAiCodeReviewService.java
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.gitignore
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.github/workflows/main-remote-jar.yml
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.github/workflows/main-local.yml
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.github/workflows/main-maven-jar.yml
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/.DS_Store
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/pom.xml
+25-05-05.18:06:12.602 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/.DS_Store
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/test/java/com/github/nanshanvv/test/ApiTest.java
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/resources/logback-spring.xml
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/resources/application-prod.yml
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/resources/application-test.yml
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/resources/application-dev.yml
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/resources/application.yml
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/openai-code-review-test/src/main/java/com/github/nanshanvv/sdk/Application.java
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/config
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/objects/pack/pack-8c359281fe3d87b702f1f6232432726469919252.pack
+25-05-05.18:06:12.603 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/objects/pack/pack-8c359281fe3d87b702f1f6232432726469919252.idx
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/HEAD
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/logs/HEAD
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/logs/refs/heads/main
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/logs/refs/remotes/origin/main
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/refs/heads/main
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/refs/remotes/origin/main
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/index
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.git/FETCH_HEAD
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/encodings.xml
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/jarRepositories.xml
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/vcs.xml
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/.gitignore
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/misc.xml
+25-05-05.18:06:12.604 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.idea/compiler.xml
+25-05-05.18:06:12.621 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-05.18:06:12.623 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-05.18:06:48.737 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -177,68 +167,19 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-05-02.11:49:09.477 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51670 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:49:09.478 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:49:09.868 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-05-02.11:49:09.870 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-05-02.11:49:09.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-25-05-02.11:49:10.462 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-05-02.11:49:10.911 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@5ecc3bb8
-25-05-02.11:49:10.912 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-05-02.11:49:11.545 [main            ] INFO  Version                - Redisson 3.44.0
-25-05-02.11:49:11.566 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-25-05-02.11:49:11.719 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:12.053 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:12.552 [main            ] INFO  RAGTest                - Started RAGTest in 3.355 seconds (process running for 4.052)
-25-05-02.11:49:13.516 [main            ] INFO  RAGTest                - Upload Success!
-25-05-02.11:49:13.534 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-05-02.11:49:13.535 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-05-02.11:49:24.377 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/Users/shuchangwen/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/Users/shuchangwen/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-25-05-02.11:49:24.387 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51683 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:49:24.388 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:49:24.772 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-05-02.11:49:24.774 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-05-02.11:49:24.791 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-25-05-02.11:49:25.365 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-05-02.11:49:25.807 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@2e62903f
-25-05-02.11:49:25.808 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-05-02.11:49:26.473 [main            ] INFO  Version                - Redisson 3.44.0
-25-05-02.11:49:26.494 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-25-05-02.11:49:26.647 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:26.980 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:49:27.340 [main            ] INFO  RAGTest                - Started RAGTest in 3.245 seconds (process running for 4.173)
-25-05-02.11:49:27.723 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-05-02.11:49:27.724 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-05-02.11:50:17.388 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/Users/shuchangwen/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/Users/shuchangwen/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-25-05-02.11:50:17.401 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.15 with PID 51699 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
-25-05-02.11:50:17.401 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-05-02.11:50:17.806 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-05-02.11:50:17.808 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-05-02.11:50:17.826 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-25-05-02.11:50:18.380 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-05-02.11:50:18.796 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@455fead7
-25-05-02.11:50:18.797 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-05-02.11:50:19.767 [main            ] INFO  Version                - Redisson 3.44.0
-25-05-02.11:50:19.815 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-25-05-02.11:50:20.044 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:50:20.391 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
-25-05-02.11:50:20.792 [main            ] INFO  RAGTest                - Started RAGTest in 3.703 seconds (process running for 4.367)
-25-05-02.11:51:09.603 [main            ] INFO  RAGTest                - Chat Response: {"metadata":{"promptMetadata":{},"rateLimit":{"requestsLimit":0,"requestsRemaining":0,"requestsReset":{"nano":0,"negative":false,"seconds":0,"units":["SECONDS","NANOS"],"zero":true},"tokensLimit":0,"tokensRemaining":0,"tokensReset":{"$ref":"$.metadata.rateLimit.requestsReset"}},"usage":{"generationTokens":0,"promptTokens":0,"totalTokens":0}},"result":{"metadata":{"contentFilterMetadata":{"generationTokens":231,"promptTokens":82,"totalTokens":313},"finishReason":"unknown"},"output":{"content":"<think>\n好的，用户让我用中文回答，并且我应该像 knowing as if I knew this information innately. 首先，我需要理解用户的查询。他们给出的信息是：“王二 1980年出生王二 1980年出生”。看起来这是一个重复的句子，可能是在测试我的反应。\n\n接下来，用户问的是“王二哪年出生”，这意味着他们想要知道王二的出生年份。但根据提供的信息，“王二 1980年出生”已经明确指出出生年份是1980年。因此，回答应该是确认这一点，并说明出生年份。\n\n由于我的回复必须是中文且作为“助手”的角色，我需要用准确的表达方式来回应。同时，用户可能希望我能够独立理解这些信息，而不依赖于任何外部知识。\n\n总结一下，我需要明确回答：王二在1980年出生，因此哪一年出生答案就是1980年。\n</think>\n\n王二在1980年出生，所以哪一年出生是**1980年**。","media":[],"messageType":"ASSISTANT","properties":{}}},"results":[{"$ref":"$.metadata.rateLimit.result"}]}
-25-05-02.11:51:09.632 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-05-02.11:51:09.633 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-05-05.18:06:48.746 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.15 with PID 18775 (started by shuchangwen in /Users/shuchangwen/Documents/project/ai-rag-knowledge/sc-dev-tech-app)
+25-05-05.18:06:48.747 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-05-05.18:06:49.079 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-05-05.18:06:49.081 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-05-05.18:06:49.096 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+25-05-05.18:06:49.626 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-05-05.18:06:50.142 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@35c26176
+25-05-05.18:06:50.143 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-05-05.18:06:50.793 [main            ] INFO  Version                - Redisson 3.44.0
+25-05-05.18:06:50.811 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+25-05-05.18:06:51.027 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:06:51.290 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 18.221.133.150/18.221.133.150:16379
+25-05-05.18:06:51.632 [main            ] INFO  JGitTest               - Started JGitTest in 3.121 seconds (process running for 3.662)
+25-05-05.18:06:51.929 [main            ] INFO  JGitTest               - 文件路径:./cloned-repo/.DS_Store
+25-05-05.18:06:52.243 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-05-05.18:06:52.244 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.

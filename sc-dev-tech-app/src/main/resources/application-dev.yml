@@ -27,12 +27,18 @@ spring:
       # 连接测试query
       connection-test-query: SELECT 1
   ai:
+    openai:
+      base-url: https://api.openai.com
+      api-key: sk-proj-xxxxxx
+      embedding-model: text-embedding-ada-002
     ollama:
       base-url: http://18.221.133.150:11434
       embedding:
         options:
           num-batch: 512
         model: nomic-embed-text
+    rag:
+      embed: nomic-embed-text
 
 # Redis
 redis:
